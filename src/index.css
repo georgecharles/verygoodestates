@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --accent: 0 0% 96.1%;
+    --accent-foreground: 0 0% 9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.75rem;
+  }
+
+  body {
+    @apply bg-navy-950 text-white font-light antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Quattrocento Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quattrocento', serif;
+    @apply font-light;
+  }
+
+  /* Smooth scrolling for the entire site */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Link hover animations */
+  a {
+    @apply transition-all duration-200;
+  }
+
+  /* Button hover animations */
+  button {
+    @apply transition-all duration-200;
+  }
+
+  /* Card hover animations */
+  .card {
+    @apply transition-all duration-300;
+  }
+}

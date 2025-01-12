@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+  <property>
+    <name>http.agent.name</name>
+    <value>nutch-2.3.1-crawler</value>
+  </property>
+  <property>
+    <name>solr.server.url</name>
+    <value>http://localhost:8983/solr/nutch</value>
+  </property>
+</configuration>
